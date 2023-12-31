@@ -1,0 +1,160 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: TruliaSans, Trulia-Fallback, sans-serif;
+  color: rgb(59, 65, 68);
+  background-color: rgb(255, 255, 255);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.1px;
+}
+a {
+  text-decoration: none;
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main_Heading {
+  font-size: 40px;
+  font-weight: 700;
+  padding: 10px;
+}
+.geolocations {
+  overflow: hidden;
+  margin-top: 20px;
+  padding: 2px;
+}
+.geolocations ul {
+  list-style: none;
+}
+.Container {
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
+  margin-left: 15px;
+  margin-right: -8px;
+  margin-top: -16px;
+  flex-wrap: nowrap;
+}
+.propertyContainer {
+  /* flex: 1 1 250px; */
+  margin-bottom: 30px;
+  padding: 12px 0px;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
+}
+.propertyContent {
+  min-width: 224px;
+  width: 224px;
+}
+.image_container {
+  border-radius: 8px;
+}
+.image {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  transition: 0.4s ease-in-out;
+}
+.image:hover {
+  transform: scale(1.05);
+  filter: grayscale(10%);
+  opacity: 0.5;
+}
+
+.propertyImage {
+  position: relative;
+  z-index: 0;
+  max-height: 380px;
+  height: 160px;
+}
+.imageWrapper {
+  min-height: 160px;
+}
+.imageOverlay {
+  background-color: rgb(232, 233, 234);
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow 0.1s ease 0s, border-color 0.1s ease 0s;
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
+.imageContainer {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.propertyImg {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s ease-in-out;
+}
+.propertyImg:hover {
+  transform: scale(1.05);
+  filter: grayscale(2%);
+}
+.propertyPrice {
+  display: flex;
+  gap: 5px;
+  align-items: baseline;
+  margin-top: 5px;
+}
+.propertyPrice h3 {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.propertyFeatures {
+  display: flex;
+  flex-direction: row;
+}
+.feature {
+  padding: 0px 4px 0px 0px;
+}
+.featureIcon {
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+}
+.Icon {
+  width: 20px;
+  height: 20px;
+}
+.ktqKBT {
+  margin: 0px 2px;
+}
+.ktqKBT:last-child {
+  margin-right: 0px;
+}
+.featureValue {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.izWVhI:last-child {
+  margin-right: 0px;
+}
+.izWVhI {
+  margin: 0px 2px;
+  overflow: hidden;
+}
+.propertyLocation {
+  color: #919699;
+  font-size: 0.7rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.propertyType {
+  color: #0793ea;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}

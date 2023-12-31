@@ -1,0 +1,12 @@
+.Header-Name{
+    font-size: 28px;
+    text-decoration: none;
+    font-weight: 700;
+    color: #ffffff;
+}
+.custom-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30"%3E%3Cpath stroke="black" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22" /%3E%3C/svg%3E');
+    /* Change the color of the stroke to black (stroke="black") */
+    width: 1.5em;
+    height: 1.5em;
+  }

@@ -1,0 +1,115 @@
+.right {
+  background-image: url('./3.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: right;
+  padding-top: 60px;
+}
+.form_main_container {
+  max-width: 550px;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  padding: 10px 5px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  margin-right: 4px;
+  /* margin-inline: auto; */
+}
+.center_logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  background-color: #092b5e;
+  color: white;
+  border: none;
+  padding: 13px 40px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+/* INPUT STYLES */
+.form_input_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.input_group {
+  flex: 1 1 220px;
+  position: relative;
+  border: 2px solid #bbbbbb;
+  border-radius: 5px;
+  margin: 2px;
+  transition: 0.2s ease-in-out;
+}
+
+.input_group input,
+textarea {
+  padding: 14px 18px;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  color: #363636;
+  line-height: 24px;
+  transition: 0.2s ease-in-out;
+}
+
+.input_group:hover,
+.input_group:focus-within {
+  border-color: #0d60dd;
+}
+
+.input_group input:focus,
+.input_group:hover input {
+  color: #363636;
+}
+
+.input_group textarea:focus,
+.input_group:hover textarea {
+  color: #363636;
+}
+
+.input_group label {
+  position: absolute;
+  background-color: transparent;
+  padding: 14px 18px;
+  line-height: 24px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  color: #898989;
+  cursor: text;
+  font-size: 14px;
+  transition: 0.2s ease-in-out;
+}
+.input_group:hover {
+  color: #0d60dd;
+}
+.input_group:focus-within label,
+.input_group input:not(:placeholder-shown) ~ label {
+  padding: 0px 8px;
+  background-color: #ffffff;
+  top: -12px;
+  left: 10px;
+  bottom: auto;
+  color: #0d60dd;
+  font-weight: 600;
+}
+
+.input_group:focus-within label,
+.input_group textarea:not(:placeholder-shown) ~ label {
+  padding: 0px 8px;
+  background-color: #ffffff;
+  top: -12px;
+  left: 10px;
+  bottom: auto;
+  color: #0d60dd;
+  font-weight: 600;
+}

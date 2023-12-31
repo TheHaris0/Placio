@@ -1,0 +1,248 @@
+.main_container {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 100002;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  animation: 0.3s ease-out 0s 1 normal none running jBcSpD;
+  padding: 48px 16px;
+  background-color: rgb(0, 0, 0, 0.3);
+}
+.cancel {
+  display: flex;
+  justify-content: end;
+}
+.cancel span {
+  font-size: 1.3rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 3px 12px;
+  border-radius: 50%;
+}
+.cancel span:hover {
+  background-color: rgb(0, 0, 0, 0.3);
+}
+.login_container {
+  width: 350px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 25px 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  width: 50px;
+  aspect-ratio: 16/16;
+}
+.header h2 {
+  padding: 15px 0 25px 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.header p {
+  font-size: 1rem;
+}
+.login_data {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.login_data input {
+  padding: 15px 12px;
+  border: 1px solid lightgrey;
+  font-size: 1rem;
+  background: white;
+  outline: none;
+}
+.login_data input:invalid {
+  border: 1px solid rgb(223, 33, 33);
+}
+.login_data label {
+  font-size: 1.2rem;
+  position: absolute;
+  top: 14px;
+  left: 25px;
+  transition: 0.3s;
+  color: #8a8484;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  pointer-events: none;
+}
+.input-group:hover {
+  color: #0d60dd;
+}
+.login_data span {
+  color: red;
+  font-size: 0.8rem;
+}
+/* .login_data:focus-within label {
+  transform: translateX(-12px) translateY(-22px);
+  font-size: 0.9rem;
+  padding: 0 4px;
+  color: #6ca6df;
+  background: white;
+} */
+.login_data:focus-within label,
+.login_data input:not(:placeholder-shown) ~ label {
+  background-color: #ffffff;
+  transform: translateX(-12px) translateY(-22px);
+  font-size: 0.9rem;
+  padding: 0 4px;
+  color: #6ca6df;
+  background: white;
+}
+.login_data input[type="text"]:hover {
+  border: 1px solid #6ca6df;
+  background: white;
+}
+.login_data input[type="text"]:focus-visible {
+  border-color: #6ca6df;
+}
+.login_data input:invalid ~ label {
+  color: red;
+}
+.login_data input:invalid ~ input:focus,
+.login_data input:invalid ~ input:focus-visible {
+  border: 1px solid red;
+}
+
+.password_view {
+  display: flex;
+  border: 1px solid lightgrey;
+  align-items: center;
+  margin-top: 15px;
+}
+.password_view .login_data {
+  margin-top: 0;
+}
+.password_view .login_data {
+  flex-grow: 3;
+  margin-top: 0;
+}
+.password_view .login_data input {
+  border: none;
+  width: 100%;
+}
+.password_view .login_data input:hover,
+.password_view .login_data input:focus {
+  border: none;
+  border-radius: 0%;
+  border-color: transparent;
+}
+
+.password_view button {
+  width: 1px;
+  padding: 10px 13px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  right: 20px;
+}
+
+.ViewLogo {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='18' height='13' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3Cpath d='M9 12c3.13 0 5.732-1.788 7.856-5.5C14.732 2.788 12.13 1 9 1S3.268 2.788 1.144 6.5C3.268 10.212 5.87 12 9 12zM9 0c3.667 0 6.667 2.167 9 6.5-2.333 4.333-5.333 6.5-9 6.5s-6.667-2.167-9-6.5C2.333 2.167 5.333 0 9 0zm0 9a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm0 1a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z' id='a'/%3E%3C/defs%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cmask id='b' fill='%23fff'%3E%3Cuse xlink:href='%23a'/%3E%3C/mask%3E%3Cuse fill='%235C677D' fill-rule='nonzero' xlink:href='%23a'/%3E%3Cg mask='url(%23b)' fill='%235C677D'%3E%3Cpath d='M-1-4h20v20H-1z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.forget {
+  margin-top: 10px;
+}
+.forget a {
+  text-decoration: none;
+  color: #5245e9;
+}
+.submit input {
+  width: 100%;
+  padding: 15px;
+  background-color: #5245e9;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  margin: 20px 0 10px 0;
+  cursor: pointer;
+}
+.submit input:hover {
+  background-color: #4a3ed1;
+}
+.newAccount a {
+  text-decoration: none;
+  color: #5245e9;
+}
+
+.ORtag {
+  width: 100%;
+  display: flex;
+  text-transform: uppercase;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 24px 0 0;
+  justify-content: center;
+  align-items: center;
+}
+.otherButton {
+  display: flex;
+  flex-direction: column;
+}
+.GoogleLogo {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 48 48'%3E%3Cdefs%3E%3Cpath id='a' d='M44.5 20H24v8.5h11.8C34.7 33.9 30.1 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 4.1 29.6 2 24 2 11.8 2 2 11.8 2 24s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z'/%3E%3C/defs%3E%3CclipPath id='b'%3E%3Cuse xlink:href='%23a' overflow='visible'/%3E%3C/clipPath%3E%3Cpath clip-path='url(%23b)' fill='%23FBBC05' d='M0 37V11l17 13z'/%3E%3Cpath clip-path='url(%23b)' fill='%23EA4335' d='M0 11l17 13 7-6.1L48 14V0H0z'/%3E%3Cpath clip-path='url(%23b)' fill='%2334A853' d='M0 37l30-23 7.9 1L48 0v48H0z'/%3E%3Cpath clip-path='url(%23b)' fill='%234285F4' d='M48 48L17 24l-4-3 35-10z'/%3E%3C/svg%3E");
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+.FacebookLogo {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill='none' class='_96z7' aria-labelledby='fb-app-logo'%3E%3Cpath d='M30 15.091C30 6.756 23.285 0 15 0S0 6.756 0 15.091C0 22.625 5.484 28.868 12.656 30V19.454H8.848V15.09h3.808v-3.324c0-3.782 2.239-5.872 5.666-5.872 1.64 0 3.358.295 3.358.295v3.714h-1.893c-1.863 0-2.443 1.164-2.443 2.358v2.83h4.16l-.665 4.362h-3.495V30C24.516 28.868 30 22.625 30 15.091z' fill='%23000'/%3E%3C/svg%3E");
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+.button {
+  display: flex;
+  padding: 13px;
+  gap: 10px;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid lightgrey;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.button span {
+  font-size: 1.1rem;
+}
+.button:hover {
+  background-color: #e5e5e5;
+}

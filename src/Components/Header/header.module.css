@@ -1,0 +1,152 @@
+.header {
+  background-image: url(https://ssl.cdn-redfin.com/cop-assets/prod/banners/HPTO_2023_Q4_WinterScene_DESKTOP.jpg);
+  height: 525px;
+  background-position: center center;
+  background-size: cover;
+}
+.header_content {
+  width: 50%;
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .header_content {
+    width: 100%;
+  }
+}
+.headerText {
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: transparent;
+  line-height: 1.14;
+  margin-bottom: 20px;
+}
+.fjJhcT {
+  display: flex;
+  background-color: rgba(59, 65, 68, 0.3);
+  border-radius: 5px;
+  border-color: transparent;
+  margin-bottom: 10px;
+}
+
+.button_Buy {
+  margin: 0px;
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+  display: inline-block;
+  color: transparent;
+  text-align: center;
+  font-weight: bold;
+  transition: top 0.1s ease 0s, box-shadow 0.1s ease 0s,
+    border-color 0.1s ease 0s, background-color 0.1s ease 0s, color 0.1s ease 0s;
+  white-space: nowrap;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.5;
+  outline: none;
+  padding: 8px 24px;
+  border: none;
+  font-weight: normal;
+  background-color: transparent;
+}
+.button_Buy:hover {
+  background-color: #ffffff;
+}
+.button_Buy:hover > div {
+  background-color: #ffffff;
+  color: #000000;
+}
+.button_Rent {
+  margin: 0px;
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+  display: inline-block;
+  color: transparent;
+  text-align: center;
+  font-weight: bold;
+  transition: top 0.1s ease 0s, box-shadow 0.1s ease 0s,
+    border-color 0.1s ease 0s, background-color 0.1s ease 0s, color 0.1s ease 0s;
+  white-space: nowrap;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.5;
+  outline: none;
+  padding: 8px 24px;
+  border: none;
+  font-weight: normal;
+  background-color: transparent;
+}
+.button_Rent:hover {
+  background-color: #ffffff;
+}
+.button_Rent:hover > div {
+  background-color: #ffffff;
+  color: #000000;
+}
+.buy {
+  font-size: 20px;
+  line-height: 1.2;
+  color: #ffffff;
+  background-color: inherit;
+}
+.rent {
+  font-size: 20px;
+  line-height: 1.2;
+  color: #ffffff;
+  background-color: inherit;
+  height: 100%;
+  width: 100%;
+}
+.headerInput {
+  position: relative;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  transition: width 0.35s ease 0s;
+}
+.svg {
+  background-color: rgb(217, 60, 35);
+  height: 32px;
+  border-color: transparent;
+  width: 32px;
+}
+.iIemqJ path {
+  fill: rgb(255, 255, 255);
+}
+.headerinput_input {
+  border: 1px solid rgb(245, 246, 247);
+  background-color: rgb(255, 255, 255);
+  color: rgb(59, 65, 68);
+  font-size: 20px;
+  line-height: 1.1;
+  width: 500px;
+  height: 60px;
+  transition: width 0.35s ease 0s;
+  padding: 8px 38px 8px 16px;
+  outline: none;
+}
+.location_search_button {
+  position: absolute;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  right: 0px;
+  top: 0px;
+  height: 100%;
+  min-width: 60px;
+  cursor: pointer;
+  background-color: rgb(217, 60, 35);
+  padding: 14px;
+  transition: background-color 0.15s ease 0s;
+}
