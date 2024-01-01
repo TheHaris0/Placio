@@ -7,7 +7,7 @@ import Home from './Components/Home/Home';
 import Sell from './Components/Sell/Sell';
 import PropertyToSearch from './Components/propertyToSearch/propertyToSearch';
 import ExploreProperty from './Components/exploreProperty/exploreProperty';
-import UserDashBoard from './Components/userDashBoard/userDashBoard';
+import UserDashboard from './Components/userDashBoard/userDashBoard';
 import ContactUs from './Components/ContactUs/ContactUs';
 function App() {
   return (
@@ -19,9 +19,8 @@ function App() {
           <Route path='/rentals' element={<RentProperty/>} />
           <Route path='/properties' element={<PropertyToSearch />} />
           <Route path='/properties/property' element={<ExploreProperty />} />
-          <Route path='/dashboard' element={<UserDashBoard />} />
           <Route path='/contactUs' element={<ContactUs />} />
-          
+          <Route path='/dashboard' element={<UserDashboard />} />
         </Routes>
       </BrowserRouter>
       
